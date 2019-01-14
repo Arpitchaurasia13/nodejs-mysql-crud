@@ -1,0 +1,24 @@
+html
+ head
+  title Account List
+ body
+  h3 Account Edit
+  form(method="post" , action="/account/edit") Edit
+   table
+    tr
+     th UserName
+     td
+      input(type="text" ,name="username",value=account.username)
+      input(type="hidden", name="id",value=account.id)
+    tr
+     th FullName
+     td
+      input(type="text" ,name="fullname",value=account.fullname)
+    tr
+     th Password
+     td
+      input(type="password", name="password")
+    tr
+     th &nbspl;
+     td
+      input(type="submit" ,value="Save")
